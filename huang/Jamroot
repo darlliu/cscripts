@@ -23,16 +23,19 @@ project
   : requirements 
       <library>/boost/python//boost_python ;
 
-
+lib alg
+  :
+  : <file>./alg.so <variant>debug
+  ;
 # Declare the three extension modules.  You can specify multiple
 # source files after the colon separated by spaces.
-python-extension test_ext : test.cpp :
-      <include>/home/yul13/gcc/include/alglib :
+python-extension clustering : clustering.cpp alg :
+      <include>./alglib :
       <include>/home/yul13/gcc/include ;
 # Put the extension and Boost.Python DLL in the current directory, so
 # that running script by hand works.
 install convenient_copy 
-  : test_ext 
+  : clustering 
   : <install-dependencies>on <install-type>SHARED_LIB <install-type>PYTHON_EXTENSION 
     <location>. 
   ;
@@ -46,6 +49,6 @@ local rule run-test ( test-name : sources + )
 }
 
 # Declare test targets
-run-test test : test_ext test.py ;
+run-test test : clustering clustering_test.py ;
 
 

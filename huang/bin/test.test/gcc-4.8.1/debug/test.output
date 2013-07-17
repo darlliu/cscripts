@@ -1,5 +1,6 @@
-Hi There, this is a boost/python test program.
-Now testing python extension.
-None
+SVD PCA success
+['[42571.643,0.691]', '[[0.832,-0.554],[0.554,0.832]]']
+KMeans Clustering Successful!
+[1,0,0]
 
 EXIT STATUS: 0
