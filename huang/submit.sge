@@ -1,0 +1,13 @@
+#$ -N Pipeline-Runs-Cybert-{1}-{0}
+#$ -cwd
+#$ -j y
+#$ -S /bin/bash
+#$ -q benzene.q
+#$ -o /home/yul13/tmp/clusteroutput.txt
+#$ -e /home/yul13/tmp/clustererror.txt
+#$ -p crick.p
+date
+source /home/yul13/.bashrc
+source /home/dock/workspace/yuliu/codebase/crick/centos5-64-py26.profile
+which python
+python network.py

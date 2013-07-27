@@ -7,9 +7,12 @@
 *.csv
 *.xls
 *.pkl
+*.png
 *.pyc
-png/*
-pcaplots/*
+*.tgz
+huang/png/*
+huang/csv/*
+huang/pcaplots/*
 
 # Compiled Dynamic libraries
 *.so

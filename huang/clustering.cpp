@@ -49,6 +49,7 @@ boost::python::str kmeans (boost::python::str ss,
     else std::cerr<<"Unknown Error type: "<<flag<<std::endl;
     return boost::python::str(rep.cidx.tostring());
 }
+
 BOOST_PYTHON_MODULE(clustering)
 {
     using namespace boost::python;
