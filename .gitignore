@@ -2,6 +2,14 @@
 *.slo
 *.lo
 *.o
+*.html
+*.tsv
+*.csv
+*.xls
+*.pkl
+*.pyc
+png/*
+pcaplots/*
 
 # Compiled Dynamic libraries
 *.so
