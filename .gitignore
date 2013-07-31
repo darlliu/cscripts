@@ -8,7 +8,9 @@
 *.xls
 *.pkl
 *.png
+*.xgmml
 *.pyc
+*.tar.gz
 *.tgz
 huang/png/*
 huang/csv/*
